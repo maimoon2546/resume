@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My site me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href="Image (2).png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+/* Create a Parallax Effect */
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("mm.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+       href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+      <a href="#edu" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EDUCATION</a>
+      <a href="#photo" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTOGRAPHER</a>
+      <a href="#cont" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="https://std.mcs.psu.ac.th/6520310134/html/134/My%20card/" class="w3-bar-item w3-button">My card</a>
+          <a href="https://std.mcs.psu.ac.th/6520310134/html/134/My%20CV/" class="w3-bar-item w3-button">My CV</a>
+          <a href="https://std.mcs.psu.ac.th/6520310134/html/134/My%20site/Album%20me.html" class="w3-bar-item w3-button">My album</a>
+        </div>
+      </div>
+      <a href="javascript:openSearchBox();" class="w3-padding-large w3-hover-red w3-hide-small w3-right">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+  </div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
+    <a href="#edu" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EDUCATION</a>
+    <a href="#photo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PHOTOGRAPHER</a>
+    <a href="#cont" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-64 w3-white">
+      <!-- <h1 class="w3-xxxlarge" style="font-family: MyCustomFont;"><b> 𝐌𝐚𝐢𝐦𝐨𝐨𝐧 ☾</b></h1> -->
+      <h1 class="w3-xxxlarge" style="font-family: MyCustomFont; line-height: 1.0; margin-top: 40px;"><b> 𝐌𝐨𝐨𝐧𝐧𝐧 ☾</b></h1>
+      <h6>Welcome to the blog of <span class="w3-tag">lifestyle</span></h6>
+    </header>
+</div>
+
+<!-- The Band Section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide" style="font-weight: bold;">ABOUT ME</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <img src="Moon.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%">
+      </div>
+      <div class="w3-third">
+        <img src="jj.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%">
+      </div>
+      <div class="w3-third">
+        <img src="Image.jpg" class="w3-round" alt="Random Name" style="width:77%">
+      </div>
+    </div>
+
+    <p style="font-weight: 500; margin-top: -10px;">𝐈'𝐦  𝐌𝐚𝐢𝐦𝐨𝐨𝐧  𝐃𝐚𝐧𝐠𝐝𝐨</p>
+    <p style="font-weight: 500;">𝐌𝐂𝐒 𝟔𝟓 :  𝐘𝟑 | 𝐆.𝟑𝟑 </p>
+    <p style="font-weight: 500;">𝐏𝐫𝐢𝐧𝐜𝐞 𝐨𝐟 𝐬𝐨𝐧𝐠𝐤𝐥𝐚 𝐔𝐧𝐢𝐯𝐞𝐫𝐬𝐢𝐭𝐲</p>
+    <p class="w3-justify">I pray that the future path I choose to walk will be safe and that along the way,
+     I wish there will only be smiles and happiness along the way , may every step you take be filled with Barakat
+     and please live in a version of yourself that doesn't hurt others be it through words, mind, and feelings.
+     | Start with Bismillah and End with Alhamdulillah &#128151.</p>
+    <p style="font-weight: 500;">Sobar ✧ Shukur ✧ Tawakal</p>
+    <p style="font-weight: 500;">ʚ🫀ɞ ♡</p> 
+</div>
+
+<!-- Testimonials -->
+<div class="w3-content w3-container w3-justify w3-padding-16" id="edu">
+  <h3 class="w3-wide w3-center w3-padding-16" style="font-weight: bold; font-size: 30px;">EDUCATION</h3>
+  <div class="w3-row w3-padding-32">
+  
+     <div class="w3-third">
+       <img src="logoss.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px; margin-top: 12px;">
+       <p><span class="w3-large w3-text-black w3-margin-right" style="font-weight: bold;">Sasnowatwitthaya School</span> 
+         โรงเรียนศาสโนวาทวิทยา </p>
+       <p style="margin-top: -14px;">Primary education</p>
+       <div style="text-align: center;">
+        <a href="https://www.facebook.com/sasnowatwitya">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge"></i> Click see page</a>
+       </div> 
+     </div>
+
+     <div class="w3-third">
+       <img src="logopw.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px; margin-top: 12px;">
+       <p><span class="w3-large w3-text-black w3-margin-right" style="font-weight: bold;">Piraya-nawin School</span></p>
+       <p style="margin-top: -14px;">โรงเรียนพีระยานาวินคลองหินวิทยา</p>
+       <p style="margin-top: -12px;">High education</p>
+       <div style="text-align: center;">
+        <a href="https://www.facebook.com/profile.php?id=61550117014568">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge"></i> Click see page</a>
+       </div> 
+     </div>
+
+     <div class="w3-third">
+       <img src="psu_logo_01.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px; margin-top: -5px;">
+       <p><span class="w3-large w3-text-black w3-margin-right" style="font-weight: bold;">PSU - Pattani University</span> 
+         มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตปัตตานี </p>
+         <div style="text-align: center;">
+          <a href="https://www.facebook.com/psupattanicampus">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge"></i> Click see page</a>
+         </div>        
+     </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-center w3-padding-64" id="photo">
+  <h4 class="w3-wide" style="font-weight: bold; font-size: 30px;">PHOTOGRAPHER</h4>
+  <p class="w3-center">Here is life style for me in every day look<br> Click on the images </p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="p1.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="The sea in Krabi">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="p2.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="Your self">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="p3.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="Pileh lakun Island">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="p4.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="Sunset in Krabi">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="p5.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="Building in Malaysia">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="p6.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="Genting Highland">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="p7.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="KL CC in Malaysia">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="p8.jpg" style="width:98%" onclick="onClick(this)" class="w3-hover-opacity w3-round " alt="Pinang Hill">
+    </div>
+    <a href="file:///D:/134/My%20site/Album%20me.html#" class="w3-button w3-padding-large w3-gray" style="font-weight: bold; margin-top:64px ">LOAD MORE</a>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity "></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="cont">
+  <div class="w3-display-middle" style="margin-top:-148px" >
+     <span class="w3-xxlarge w3-text-white w3-wide" style="font-weight: bold; ">CONTACT</span>
+  </div>
+</div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle w3-container  w3-padding-16" style="margin-top: -160px;">
+    <p><button onclick="document.getElementById('contact').style.display='block'" 
+      class="w3-button w3-light-grey " style=" margin-top:-278px "><i class=" w3-margin-top"></i>&#128064 See me</button></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-white w3-padding-32 w3-opacity w3-hover-opacity-off">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="p9.jpg" class="w3-image w3-round" style="width:100%">
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom ">
+            <a href="https://www.facebook.com/profile.php?id=100010882360748">
+              <i class="fa fa-facebook-official fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Facebook : Maimoon dangdo<br></a>
+            <a href="https://www.instagram.com/mmoonnn3?fbclid">
+              <i class="fa fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Instagram : mmoonnn3<br></a>
+            <i class="fa fa-twitter fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Twitter<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email : 6520310134@psu.ac.th<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone : 081-296xxx<br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+  }
+  
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+      } else {
+          x.className = x.className.replace(" w3-show", "");
+      }
+  }
+  </script>
+  <script>
+    function openSearchBox() {
+        // ใส่โค้ด JavaScript ที่ต้องการให้ทำงานเมื่อกดปุ่มค้นหา
+        alert("Thank you for looking My site");
+    }
+  </script>
+
+
+
+</body>
+</html>
+  
